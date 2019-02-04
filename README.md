@@ -6,10 +6,6 @@ News Highlight application is a flask application that lists and previews news a
 
 #### By **Ivy Nzioka**
 
-## Working of the website.
-
-The project runs on a browser,It is a calculator that is configured to take in three values and by using the javascript if and else if statement it can find out if the triangle is equilateral,scalene,or isosceles or if not a triangle at all.
-
 ## Behaviour Driven Development.
 
 | Behaviour                  | Input                       | Output               |
