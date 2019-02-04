@@ -14,10 +14,7 @@
         <!-- General sources section  -->
         <h3> General sources</h3>
          <ul>
-            {% for general_sources in news %}
-                <li>{{ general_sources.name}}</li>
-                <li>{{ general_sources.description}}</li>
-            {% endfor %}
+                {{ macro.displaySourceList(general)}}
         </ul>
 
     </body>
