@@ -11,9 +11,10 @@ def index():
     '''
     general_sources = get_sources('general')
     general_tech = get_sources('technology')
-    general_business = gets_sources('business')
+    general_business = get_sources('business')
+    general_sports = get_sources('sports')
     title = 'Home - The Best News Highlight Website Online'
-    return render_template('index.html', title = title, general = general_sources, technology = general_tech, business = general_business)
+    return render_template('index.html', title = title, general = general_sources, technology = general_tech, business = general_business, sports = general_sports)
 
 
 @app.route('/articles/<source_id>')
