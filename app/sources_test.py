@@ -12,7 +12,7 @@ class SourceTest(unittest.TestCase):
         '''
         Set up method that will run before every Test
         '''
-        self.new_source = Sources("thisnews","Thisnews","This is the best news","htttps://google.com","general","us")
+        self.new_source = Sources("thisnews","Thisnews","This is the best news","https://google.com","general","us")
 
     def test_instance(self):
         self.assertTrue(isinstance(self.new_source,Sources))

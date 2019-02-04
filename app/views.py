@@ -13,12 +13,13 @@ def index():
     title = 'Home - The Best News Highlight Website Online'
     return render_template('index.html', title = title, general = general_sources)
 
+
 @app.route('/articles/<source_id>')
 def articles(source_id):
 
     '''
-    View news page function that returns articles
+    View articles page function that returns articles
     '''
-    
+
     title = 'Articles'
     return render_template('articles.html', title = title, id = source_id)
