@@ -12,8 +12,9 @@
         <!-- General sources section  -->
         <h3> General sources</h3>
          <ul>
-            {% for general_category in general%}
-                <li>{{ general_category.title}}</li>
+            {% for general_sources in general%}
+                <li>{{ general_sources.name}}</li>
+                <li>{{ general_sources.description}}</li>
             {% endfor %}
         </ul>
 
