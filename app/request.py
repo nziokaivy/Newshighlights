@@ -55,11 +55,11 @@ def process_results(sources_list):
 
     return sources_results
 
-def get_articles(source_id,limit):
+def get_articles(source_id):
     '''
     Function that gets articles based on the source id
     '''
-    get_article_location_url = articles_url.format(source_id,limit,api_key)
+    get_article_location_url = articles_url.format(source_id,api_key)
 
     with urllib.request.urlopen(get_article_location_url) as url:
         articles_location_data = url.read()
