@@ -1,7 +1,7 @@
 from app import app
 import urllib.request,json
-from .models import sources
-from .models import articles
+from .models import sources,articles
+
 
 Sources = sources.Sources
 
@@ -78,7 +78,7 @@ def get_articles(source_id):
 
 def process_articles(articles_list):
     '''
-    Function that processes the articles' json results
+    Function that processes the json results for the articles
     '''
     article_location_list = []
     
@@ -97,6 +97,5 @@ def process_articles(articles_list):
             article_location_list.append(article_source_object)
         
     return article_location_list
-
 
 

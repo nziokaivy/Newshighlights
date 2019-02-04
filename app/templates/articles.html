@@ -11,12 +11,12 @@
         {% endif %}
     </head>
     <body>
-        <!-- General sources section  -->
-        <h3> General sources</h3>
+        <!-- Articles section  -->
+        <h3> Articles</h3>
          <ul>
-            {% for general_sources in general%}
-                <li>{{ general_sources.name}}</li>
-                <li>{{ general_sources.description}}</li>
+            {% for news_source in articles %}
+                <li>{{ article.url}}</li>
+                <li>{{ article.urlToImage}}</li>
             {% endfor %}
         </ul>
 
