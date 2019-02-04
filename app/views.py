@@ -20,6 +20,6 @@ def articles(source_id):
     '''
     View articles page function that returns articles
     '''
-
+    general_articles = get_articles(source_id)
     title = 'Articles'
-    return render_template('articles.html', title = title, id = source_id)
+    return render_template('articles.html', title = title, source_id = general_articles )

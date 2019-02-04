@@ -4,7 +4,7 @@ class Config:
     '''
     
     SOURCES_BASE_URL ='https://newsapi.org/v2/sources?language=en&category={}&apiKey={}'
-    ARTICLES_BASE_URL = 'EVERYTHING_SOURCE_BASE_URL = 'https://newsapi.org/v2/everything?sources={}&apiKey={}''
+    ARTICLES_BASE_URL = 'https://newsapi.org/v2/everything?sources={}&apiKey={}'
 
 
 class ProdConfig(Config):
