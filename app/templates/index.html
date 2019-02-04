@@ -1,4 +1,18 @@
-{{% extends 'base.html'%}}
+{{% extends 'base.html'}}
 
-{% import 'macros.html' as macro%}
-   
+        {% import 'macros.html' as macro%}
+    
+        
+    <body>
+        <!-- Content block -->
+{% block content %}
+
+<!-- General sources section  -->
+<h3> General sources</h3>
+<ul>
+       {{ macro.displaySourceList(general)}}
+</ul>
+
+
+{% endblock%}
+       
