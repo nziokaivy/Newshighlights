@@ -10,8 +10,9 @@ def index():
     View root page function that returns the index page and its data
     '''
     general_sources = get_sources('general')
+    general_tech = get_sources('technology')
     title = 'Home - The Best News Highlight Website Online'
-    return render_template('index.html', title = title, general = general_sources)
+    return render_template('index.html', title = title, general = general_sources, technology = general_tech)
 
 
 @app.route('/articles/<source_id>')
