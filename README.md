@@ -25,7 +25,7 @@ Here is a link to a live demo:[id]</>
 
 ## Setup/Installation Requirements
 * Python 3.6
-* Install triangle-tracker by cloning this repository:   <https://github.com/nziokaivy//Newshighlights>
+* Install news highlight by cloning this repository:   <https://github.com/nziokaivy//Newshighlights>
 * Edit the start.sh file with your api key from the news.org website
 * Install python 3.6
 * Run chmod a+x start.py
