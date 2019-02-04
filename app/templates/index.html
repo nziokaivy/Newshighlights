@@ -1,18 +1,25 @@
-{{% extends 'base.html'}}
+{% extends 'base.html'%}
 
-        {% import 'macros.html' as macro%}
+{% import 'macros.html' as macro %}
     
         
     <body>
         <!-- Content block -->
 {% block content %}
+<div class="container-fluid">
+    <div class="row" id="top">
+        <div class="col-md-12 heading">
+            <h1>News Highlights</h1>
+        </div>
+    </div>
 
-<!-- General sources section  -->
-<h3> General sources</h3>
-<ul>
-       {{ macro.displaySourceList(general)}}
-</ul>
+    <div class="row">
+        <div class="col-md-12 categories">
+            <h2>General News</h2>
+        </div>
+            {{macro.displaySourceList(general)}}
+    </div>
+</div>    
 
-
-{% endblock%}
+{% endblock %}
        

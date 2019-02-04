@@ -21,5 +21,5 @@ def articles(source_id):
     View articles page function that returns articles
     '''
     news_source = get_articles(source_id)
-    title = 'Articles'
+    title = f'{source_id} | All Articles'
     return render_template('articles.html', title = title, name = source_id, news = news_source)

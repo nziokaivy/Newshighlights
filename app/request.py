@@ -1,6 +1,8 @@
 from app import app
 import urllib.request,json
 from .models import sources,articles
+from datetime import datetime
+
 
 
 Sources = sources.Sources
@@ -72,8 +74,15 @@ def get_articles(source_id):
         articles_location_results = None
 
         if articles_location_response['articles']:
+            author = articles_location_response.get('author')
+            title = articles_location_response.get('title')
+            description = articles_location_response.get('description')
+            url= articles_location_response.get('url')
+            urlToImage = articles_location_response.get('urlToImage')
+            publishedAt = articles_location_response.get('publishedAt')
+            
             articles_location_results = process_articles(articles_location_response['articles'])
-        
+           
     return articles_location_results    
 
 def process_articles(articles_list):
