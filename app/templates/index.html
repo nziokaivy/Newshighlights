@@ -1,21 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        {% if title %}
-        <title> {{ title }}</title>
-        {% else %}
-        <title> The Best News Highlight Website </title>
-        {% endif %}
+{{% extends 'base.html'%}}
 
-        {% import 'macros.html' as macro%}
-    </head>
-    <body>
-        <!-- General sources section  -->
-        <h3> General sources</h3>
-         <ul>
-                {{ macro.displaySourceList(general)}}
-        </ul>
-
-    </body>
-</html>
+{% import 'macros.html' as macro%}
+   
