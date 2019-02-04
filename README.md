@@ -2,7 +2,7 @@
 
 ## Description.
 
-The triangle tracker is a website that allows users to enter three values and determines if it is a triangle or not. If so, the tracker returns the name of the kind of triangle the sides make (equilateral, isosceles, scalene).News Highlight application is a flask application that lists and previews news articles from various sources.   
+News Highlight application is a flask application that lists and previews news articles from various sources.   
 
 #### By **Ivy Nzioka**
 
