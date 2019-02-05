@@ -1,10 +1,11 @@
-from flask import render_template
-from app import app
-from .request import get_sources,get_articles
+from flask import render_template,request,redirect,url_for
+from .import main
+from ..request import get_sources,get_articles
+from ..models import Sources
 
 
 # Views
-@app.route('/')
+@main.route('/')
 def index():
 
     '''
@@ -18,12 +19,12 @@ def index():
     return render_template('index.html', title = title, general = general_sources, technology = general_tech, business = general_business, sports = general_sports)
 
 
-@app.route('/articles/<id>')
+@main.route('/articles/<id>')
 def articles(id):
     '''
     Function that returns articles based on their sources
     '''
     
-    article = get_articles(id)
+    news_source = get_articles(id)
     title = f'{source_id} | All Articles'
-    return render_template('articles.html', title = title, id = id, article = article)
+    return render_template('articles.html', title = title, name = id, news = news_source)
